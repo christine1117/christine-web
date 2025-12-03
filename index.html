@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(20px, -20px) scale(1.1); }
+            50% { transform: translate(-20px, 20px) scale(0.9); }
+            75% { transform: translate(20px, 20px) scale(1.05); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+        .animation-delay-6000 {
+            animation-delay: 6s;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 2s ease-in-out infinite;
+        }
+        .project-card {
+            animation: fadeInUp 0.6s ease-out both;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+    
+    <!-- Cute floating elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob"></div>
+        <div class="absolute top-40 right-10 w-32 h-32 bg-purple-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-20 left-1/3 w-32 h-32 bg-blue-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000"></div>
+        <div class="absolute bottom-40 right-1/4 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-6000"></div>
+    </div>
+
+    <div class="relative z-10">
+        <!-- Header -->
+        <header class="pt-16 pb-12 px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-8">
+                    <!-- Avatar -->
+                    <div class="inline-block mb-6 relative">
+                        <div class="w-32 h-32 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-full flex items-center justify-center shadow-2xl animate-float overflow-hidden">
+                             <img src="https://i.imgur.com/63HBWxV.jpeg" alt="Christine" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-slow">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-4 px-6 leading-normal pb-2">
+                        Hi! I'm Chiao-Chieh (Christine) Deng 
+                    </h1>
+                    
+                
+
+                    <!-- Social Links -->
+                    <div class="flex justify-center gap-4 mb-12">
+                        <a href="https://github.com/christine1117/Christine-Projects" class="p-4 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:scale-110 hover:rotate-6">
+                            <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christine-deng-7006b7327/" class="p-4 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:scale-110 hover:rotate-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:christine921117@gmail.com" class="p-4 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:scale-110 hover:rotate-6">
+                            <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="max-w-4xl mx-auto mb-16">
+                            <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg">
+                                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">About This Portfolio</h2>
+                                
+                                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                    Welcome to my project showcase!<br>
+                                    This portfolio is basically my learning diary—a collection of projects I've built while figuring out AI and data science. Some worked beautifully, some crashed spectacularly (and taught me more), but each one pushed me to learn something new.
+                                </p>
+                                
+                                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                    You'll find a mix of machine learning models, NLP systems, data analysis projects, and automation tools. I'm drawn to projects that data can actually tell a story or solve a problem people care about.
+                                </p>
+                                
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Click around, explore the notebooks, and feel free to reach out if anything catches your eye!
+                            </div>
+</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <main class="px-8 pb-20">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                    ✨ My Projects ✨
+                </h2>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button onclick="filterProjects('all')" id="btn-all" class="filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-xl">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        All Projects
+                    </button>
+                    <button onclick="filterProjects('ai')" id="btn-ai" class="filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-white text-gray-700 shadow-md hover:shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        AI & ML
+                    </button>
+                    <button onclick="filterProjects('data')" id="btn-data" class="filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-white text-gray-700 shadow-md hover:shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                        </svg>
+                        Data Science
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Projects will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+       
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onclick="event.stopPropagation()">
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+                // 1. RAG Chatbot
+            {
+                id: 1,
+                title: "RAG Chatbot for WOOSH Navigation",
+                category: "ai",
+                description: "Retrieval-Augmented Generation chatbot helping users navigate and query WOOSH efficiently",
+                fullDescription: "My partner and I developed a RAG-based chatbot designed to help users clearly understand how does WOOSH navigation works, which is a Berkeley SkyDeck–backed startup focused on using commuter vehicles to deliver mid-weight goods. We also built the entire UI and connected it to a FastAPI backend, so users can interact with the chatbot seamlessly. It provides concise, well-cited answers about workflows, features, and operations, making the platform much easier to navigate.",
+                tech: ["RAG", "LangChain", "FAISS", "OpenAI API", "FastAPI"],
+                image: "https://wooshnavigation.com/wp-content/uploads/2025/03/Woosh-Logo-Mar-2025.png",
+        
+                date: "Oct 2025",
+                achievement: "95% answer accuracy with source citations"
+            },
+
+            // 2. Text-to-Speech
+            //{
+            //    id: 2,
+             //   title: "Text-to-Speech Model",
+             //   category: "ai",
+             //   description: "Natural-sounding TTS system with multiple voice options and emotion control",
+             //   fullDescription: "A high-quality text-to-speech system that generates natural and expressive speech. Supports multiple languages and voice styles, with fine control over pitch, speed, and emotion. Built using state-of-the-art neural vocoder technology for realistic audio synthesis.",
+             //   tech: ["PyTorch", "Tacotron 2", "WaveGlow", "Flask"],
+              //  image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&h=600&fit=crop",
+              //  githubLink: "#",
+             //   date: "Oct 2024",
+             //   achievement: "Ultra-realistic voice quality"
+            //},
+
+            // 3. Agentic AI
+            {
+                id: 3,
+                title: "Agentic AI for Mental Health Scenarios",
+                category: "ai",
+                description: "UC Berkeley CS 194 Agentic AI Enhanced PersonGym as a benchmark for evaluating AI agents in mental health conversation scenarios",
+                fullDescription: "As part of UC Berkeley CS 194: Agentic AI, my group members and I extended the PersonaGym framework into a specialized evaluation pipeline for mental-health–oriented agent systems. The system benchmarks an agent’s ability to conduct empathetic dialogues, detect emotional distress cues, and deliver safe, supportive responses. We built scenario-driven evaluation metrics across empathy, safety, and support dimensions, and implemented a full A2A testing loop to automatically score agent behaviors under controlled conditions",
+                tech: ["Mental health", "PersonGym", "LLM Evaluation", "Agentic AI"],
+                image: "https://i.imgur.com/BcwsVzN.jpeg",
+                githubLink: "#https://github.com/christine1117/agentic-ai",
+                date: "Nov 2025",
+                achievement: "Achieved stable multi-dimensional scoring across 7 behavioral metrics in crisis-intervention mental-health evaluations"
+            },
+
+            // 4. NLP Sentiment Analysis
+            {
+                id: 4,
+                title: "NLP Sentiment Model for E-Commerce Reviews",
+                category: "ai",
+                kaggleUrl: "https://www.kaggle.com/code/chr1st1ne/benchmark-nlp-model-for-product-recommends",
+                description: "Benchmark sentiment classification models for women's clothing reviews using multiple ML approaches",
+                fullDescription: "A comprehensive NLP project analyzing sentiment from real-world e-commerce clothing reviews. Built and compared multiple classification models including Logistic Regression, Random Forest, Naive Bayes, and XGBoost, with and without sentiment scoring features. The system processes customer reviews to predict recommendation status and extract insights about product satisfaction patterns.",
+                tech: ["Sentiment", "NLTK", "NLP", "XGBoost", "Logistic Regression"],
+                image: "https://i.imgur.com/BsxVQMn.png",
+                date: "Sep 2024",
+                achievement: "85.9% accuracy with Sentiment Score + Logistic Regression"
+            },
+            // 5. Falcon 9 Landing
+            {
+                id: 5,
+                title: "Falcon 9 Landing Prediction",
+                pdfUrl:"https://drive.google.com/file/d/1jtuKstPekjV-FJCs0N47Q0j7xixfOhrT/preview",
+                category: "data",
+                description: "IBM Data Science Capstone predicting SpaceX Falcon 9 landing success through EDA, modeling, and stakeholder presentation",
+                fullDescription: "A comprehensive data science project analyzing SpaceX Falcon 9 launch data to predict landing success rates. Conducted extensive exploratory data analysis, feature engineering, and built predictive models using multiple machine learning algorithms. Delivered insights through an interactive dashboard and stakeholder-facing presentation deck, helping estimate launch costs and mission planning.",
+                tech: ["Feature Engineering", "EDA","Prediction model"],
+                image: "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=800&h=600&fit=crop",
+                githubLink: "https://github.com/christine1117/Christine-Projects/tree/main/Data-Science-Projects/SpaceX",
+                date: "Feb 2025",
+                achievement: "83% prediction accuracy"
+            },
+
+            // 6. House Price Analysis
+           {
+            id: 6,
+            title: "House Price Analysis for Cook County in Chicago",
+            category: "data",
+            description: "UC Berkeley Data 100 project uncovering 10x higher prediction errors for low-income homes in Cook County assessments",
+            fullDescription: "This UC Berkeley Data 100 project exposes systematic bias in Cook County's property tax system. Using custom MAPE metrics, I discovered that cheaper homes (log price ~8) have 45% prediction errors while expensive homes (log price 12-14) only have 3-5% errors, which is a 10x difference. Further analysis revealed 63% of cheaper properties are overestimated compared to just 20% of expensive ones, creating a regressive tax burden on low-income homeowners. The project involved building regression models, engineering features from housing data, and designing custom error metrics that expose inequities hidden by traditional RMSE.",
+            tech: ["MAPE Metric", "Log-scale Regression", "Feature Engineering", "Data Visualization"],
+            image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+            notebookUrl: "https://nbviewer.org/github/christine1117/Christine-Projects/blob/main/Data-Science-Projects/House%20Analysis/projA1.ipynb",
+            githubLink: "https://github.com/christine1117/Christine-Projects/tree/main/Data-Science-Projects/House%20Analysis",
+            date: "Oct 2025",
+            achievement: "Exposed 10x error gap: 45% for cheap homes vs 3-5% for expensive homes"
+        },
+
+            // 7. YouTube Prediction
+            {
+                id: 7,
+                title: "YouTube Growth Prediction",
+                pdfUrl:"https://drive.google.com/file/d/1Naq56hq7LBmNg_rsy3fxOQzcl7LX26Wx/preview",
+                category: "data",
+                description: "A machine learning system using CatBoost and LSTM to forecast creator growth and recommend high-potential partners.",
+                fullDescription: "To assist brands in identifying high-potential influencers, this project analyzes the top 100 Travel YouTubers in Taiwan. By leveraging historical data (Social Blade), I engineered a sliding-window time-series pipeline to predict monthly View and Subscriber growth. The system utilizes DBSCAN for outlier detection, compares CatBoost and LSTM models for performance, and implements a custom Decision Index (NDCG optimized) to rank creators based on predicted future value rather than just past fame",
+                tech: ["CatBoost", "Prediction", "Time-Series Analysis"],
+                image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eW91dHViZXxlbnwwfHwwfHx8MA%3D%3D",
+    
+                date: "Jun 2025",
+                achievement: "Achieved 0.79 R² score in view prediction"
+            },
+
+            // 8. Mental Health System
+            {
+                id: 8,
+                title: "Mental Health Assessment Automation Pipeline",
+                category: "data",
+                description: "End-to-end automated system for mental health survey distribution, data processing, visualization, and personalized feedback",
+                fullDescription: "Built a comprehensive automation pipeline handling the complete workflow of mental health assessments for children institutions. It automatically distributes surveys, collects responses in real time, calculates psychological scores (RFQ-C, RFQ-U, and distress indicators), and turns everything into clear, easy-to-read results. The system also features heatmap visualizations showing distress intensity across five indicators, line charts comparing individual trends with group averages, and automated email reports with warm, personalized feedback statements.",
+                tech: ["Python", "Google Sheets API", "SMTP", "Pandas", "Matplotlib"],
+                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+                githubLink: "https://github.com/christine1117/Christine-Projects/tree/main/AI-Psychology/Mental%20Health%20Assessment%20Automation%20System",
+                date: "Mar 2025",
+                achievement: "Saving the research team about 20 hours of manual work every month"
+            }
+        ];
+
+        let currentFilter = 'all';
+
+        function renderProjects() {
+            const grid = document.getElementById('projects-grid');
+            const filtered = currentFilter === 'all' ? projects : projects.filter(p => p.category === currentFilter);
+            
+            grid.innerHTML = filtered.map((project, idx) => `
+                <div class="project-card group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer hover:-rotate-1" 
+                     style="animation-delay: ${idx * 0.1}s"
+                     onclick="openModal(${project.id})">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-500/90 via-pink-500/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="text-white text-lg font-bold animate-bounce">Click me! 🎉</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors">${project.title}</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">${project.description}</p>
+                        <div class="flex flex-wrap gap-2">
+                            ${project.tech.map(tech => `<span class="px-3 py-1 text-sm bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full font-medium">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterProjects(category) {
+            currentFilter = category;
+            
+            // Update button styles
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = 'filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-white text-gray-700 shadow-md hover:shadow-lg';
+            });
+            
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if (category === 'all') {
+                activeBtn.className = 'filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-xl';
+            } else if (category === 'ai') {
+                activeBtn.className = 'filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-gradient-to-r from-purple-400 to-blue-400 text-white shadow-xl';
+            } else {
+                activeBtn.className = 'filter-btn flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-110 hover:rotate-2 bg-gradient-to-r from-green-400 to-emerald-400 text-white shadow-xl';
+            }
+            
+            renderProjects();
+        }
+
+      function openModal(projectId) {
+    const project = projects.find(p => p.id === projectId);
+    constmodal = document.getElementById('modal');
+const content = document.getElementById('modal-content');
+
+
+// 準備文件的 HTML（支援 PDF、Notebook、Kaggle）
+let documentHTML = '';
+
+if (project.pdfUrl) {
+    // PDF
+    documentHTML = `
+        <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                    <path d="M14 2v6h6"/>
+                </svg>
+                Full Report
+            </h3>
+            <iframe 
+                src="${project.pdfUrl}"
+                class="w-full rounded-xl shadow-lg border-2 border-gray-200"
+                style="height: 600px;"
+            ></iframe>
+            <p class="text-sm text-gray-500 mt-2 text-center">
+                <a href="${project.pdfUrl.replace('/preview', '/view')}" target="_blank" class="text-purple-600 hover:underline">
+                    Open PDF in new tab →
+                </a>
+            </p>
+        </div>
+    `;
+} else if (project.kaggleUrl) {
+    // Kaggle 連結按鈕（不嵌入）
+    documentHTML = `
+        <div class="mb-6">
+            <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 text-center">
+                <svg class="w-12 h-12 text-blue-500 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"/>
+                </svg>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">View on Kaggle</h3>
+                <p class="text-gray-600 mb-4">This notebook is hosted on Kaggle</p>
+                <a href="${project.kaggleUrl}" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-xl font-semibold hover:bg-blue-600 transition-all hover:scale-105">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"/>
+                    </svg>
+                    Open Kaggle Notebook
+                </a>
+            </div>
+        </div>
+    `;
+
+} else if (project.notebookUrl) {
+    // Jupyter Notebook (GitHub/nbviewer)
+    documentHTML = `
+        <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.25 2.1l-.1-.1h-8.3c-.5 0-.9.4-.9.9v18.3c0 .5.4.9.9.9h12.4c.5 0 .9-.4.9-.9V6.85l-4.9-4.75zm-.4 2.03l2.84 2.72h-2.84V4.13zM6.6 20.4V3.75h5.9v4.3c0 .5.4.9.9.9h4.3v11.45H6.6z"/>
+                </svg>
+                Full Report
+            </h3>
+            <iframe 
+                src="${project.notebookUrl}"
+                class="w-full rounded-xl shadow-lg border-2 border-gray-200"
+                style="height: 600px;"
+            ></iframe>
+            <p class="text-sm text-gray-500 mt-2 text-center">
+                <a href="${project.notebookUrl}" target="_blank" class="text-purple-600 hover:underline">
+                    Open in new tab →
+                </a>
+            </p>
+        </div>
+    `;
+}
+
+// 組合完整內容
+content.innerHTML = `
+    <div class="relative h-64 overflow-hidden rounded-t-3xl">
+        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
+        <button onclick="closeModal()" class="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-gray-100 transition-all hover:rotate-90 shadow-lg">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="absolute bottom-6 left-6 right-6">
+            <h2 class="text-4xl font-bold text-white mb-3">${project.title}</h2>
+            <div class="flex flex-wrap gap-2">
+                ${project.tech.map(tech => `<span class="px-3 py-1 text-sm bg-white/20 backdrop-blur-sm text-white rounded-full font-medium">${tech}</span>`).join('')}
+            </div>
+        </div>
+    </div>
+    <div class="p-8">
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-4">
+                <svg class="w-6 h-6 text-purple-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <div class="text-sm text-gray-600">Completed</div>
+                <div class="font-bold text-gray-800">${project.date}</div>
+            </div>
+            <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-4">
+                <svg class="w-6 h-6 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+                <div class="text-sm text-gray-600">Achievement</div>
+                <div class="font-bold text-gray-800 text-sm">${project.achievement}</div>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+                Project Overview
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-lg">${project.fullDescription}</p>
+        </div>
+        
+        ${documentHTML}
+        
+        ${project.githubLink ? `
+            <a href="${project.githubLink}" target="_blank" class="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white rounded-2xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+            </a>
+        ` : ''}
+    </div>
+`;
+
+modal.classList.remove('hidden');
+}
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        // Initialize
+        renderProjects();
+    </script>
+</body>
+</html>
